@@ -14,3 +14,7 @@ def sendEther(to:address,amount:uint256):
 def sendAll(to:address):
     send(to,self.balance)
 
+@external
+def balanceOf() -> uint256:
+    return self.balance
+
